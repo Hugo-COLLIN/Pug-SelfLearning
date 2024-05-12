@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title Case statement
+    body
+        - const orderStatus = "Random"
+
+          case orderStatus
+            when 'Pending'
+                p Order will be sent shortly
+            when 'In_Transit'
+                p Order on the move
+            when 'Completed'
+                p Order has been completed
+            default
+                // this instead
+                p Technical issue
