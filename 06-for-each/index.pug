@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+    body
+        h1 For/Each Loop!
+        // for = each
+        each n in [ 44, 2, 3, 4, 5 ]
+            p=n
+
+        each number, index in [ 44, 2, 3, 4, 5 ]
+            p= number + " - " + index
+
+
+        ul
+            - const names = ["Tom", "Sophia", "Russels"]
+            each name, index in names
+              li= name + "-" + index
+
+        - const grades = {"Web-dev": 85, "Software Design": 76}
+          for g, i in grades
+            p= g + ":" + i
+
+        - const vals = {}
+          for g, i in vals
+              p= g + ":" + i
+          else
+              strong No values are here
